@@ -18,6 +18,7 @@ public class recyclerViewAdapter extends RecyclerView.Adapter<ViewHolder> {
         LayoutInflater layoutInflater = LayoutInflater.from(parent.getContext());
         View view = layoutInflater.inflate(R.layout.rec_item,parent,false);
         return new holder1(view);
+
     }
 
     @Override
@@ -29,6 +30,7 @@ public class recyclerViewAdapter extends RecyclerView.Adapter<ViewHolder> {
 
 
     }
+
 
     @Override
     public int getItemCount() {
@@ -42,5 +44,7 @@ public class recyclerViewAdapter extends RecyclerView.Adapter<ViewHolder> {
             txt = itemView.findViewById(R.id.textView);
         }
     }
+
+
 
 }

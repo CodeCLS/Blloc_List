@@ -15,23 +15,47 @@
             android:layout_width="match_parent"
             android:layout_height="3000dp"
             app:layout_constraintTop_toTopOf="parent"
-            android:translationY="-100dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             android:orientation="vertical">
-                <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/rec_1"
+                <LinearLayout
+                    android:id="@+id/linear_item_favourite_holder"
                     android:layout_width="match_parent"
                     android:layout_margin="10dp"
                     android:layout_height="400dp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    android:nestedScrollingEnabled="false"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
                     android:background="@drawable/round_grey_background"
-                    />
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:orientation="vertical"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                        <include
+                            android:id="@+id/include_favourite_item_0"
+                            layout="@layout/view_favourite_item"
+
+                        />
+
+                        <include
+                            android:id="@+id/include_favourite_item_1"
+                            layout="@layout/view_favourite_item"
+
+                            />
+                        <include
+                            android:id="@+id/include_favourite_item_2"
+                            layout="@layout/view_favourite_item"
+
+                            />
+
+
+
+
+
+
+
+                </LinearLayout>
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/rec_2"
+
                     android:layout_marginTop="100dp"
                     android:layout_margin="10dp"
                     app:layout_constraintEnd_toEndOf="parent"
