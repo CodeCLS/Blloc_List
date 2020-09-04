@@ -4,6 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:background="#000"
+    android:id="@+id/motionlayout_2"
 
     app:layoutDescription="@xml/activity_main_scene"
     android:layout_height="match_parent"
