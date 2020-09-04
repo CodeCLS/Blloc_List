@@ -11,7 +11,7 @@
         <OnSwipe
             motion:onTouchUp="stop"
             motion:dragDirection="dragUp"
-            motion:touchAnchorId="@+id/rec_1" />
+            motion:touchAnchorId="@+id/motionlayout_1" />
 
 
     </Transition>
